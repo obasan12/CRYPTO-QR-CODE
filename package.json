@@ -1,0 +1,35 @@
+{
+  "name": "cryptoqr",
+  "version": "1.0.0",
+  "description": "A modern multi-chain cryptocurrency payment QR code generator with beautiful animated UI",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node src/server.js",
+    "build": "echo 'Build completed'",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "cryptocurrency",
+    "qr-code",
+    "payment",
+    "blockchain",
+    "ethereum",
+    "bitcoin",
+    "solana",
+    "polygon",
+    "cardano"
+  ],
+  "author": "obasan12",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "qrcode": "^1.5.3",
+    "web3": "^1.9.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

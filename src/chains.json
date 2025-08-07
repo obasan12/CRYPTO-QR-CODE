@@ -1,0 +1,104 @@
+{
+    "ethereum": {
+        "name": "Ethereum",
+        "symbol": "ETH",
+        "tokens": {
+            "ETH": {
+                "name": "Ethereum",
+                "symbol": "ETH",
+                "decimals": 18,
+                "isNative": true
+            },
+            "USDT": {
+                "name": "Tether USD",
+                "symbol": "USDT",
+                "decimals": 6,
+                "contractAddress": "0xdAC17F958D2ee523a2206206994597C13D831ec7",
+                "isNative": false
+            },
+            "USDC": {
+                "name": "USD Coin",
+                "symbol": "USDC",
+                "decimals": 6,
+                "contractAddress": "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48",
+                "isNative": false
+            }
+        }
+    },
+    "polygon": {
+        "name": "Polygon",
+        "symbol": "MATIC",
+        "tokens": {
+            "MATIC": {
+                "name": "Polygon",
+                "symbol": "MATIC",
+                "decimals": 18,
+                "isNative": true
+            },
+            "USDT": {
+                "name": "Tether USD",
+                "symbol": "USDT",
+                "decimals": 6,
+                "contractAddress": "0xc2132D05D31c914a87C6611C10748AEb04B58e8F",
+                "isNative": false
+            },
+            "USDC": {
+                "name": "USD Coin",
+                "symbol": "USDC",
+                "decimals": 6,
+                "contractAddress": "0x2791Bca1f2de4661ED88A30C99A7a9449Aa84174",
+                "isNative": false
+            }
+        }
+    },
+    "solana": {
+        "name": "Solana",
+        "symbol": "SOL",
+        "tokens": {
+            "SOL": {
+                "name": "Solana",
+                "symbol": "SOL",
+                "decimals": 9,
+                "isNative": true
+            },
+            "USDT": {
+                "name": "Tether USD",
+                "symbol": "USDT",
+                "decimals": 6,
+                "address": "Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB",
+                "isNative": false
+            },
+            "USDC": {
+                "name": "USD Coin",
+                "symbol": "USDC",
+                "decimals": 6,
+                "address": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+                "isNative": false
+            }
+        }
+    },
+    "bitcoin": {
+        "name": "Bitcoin",
+        "symbol": "BTC",
+        "tokens": {
+            "BTC": {
+                "name": "Bitcoin",
+                "symbol": "BTC",
+                "decimals": 8,
+                "isNative": true
+            }
+        }
+    },
+    "cardano": {
+        "name": "Cardano",
+        "symbol": "ADA",
+        "tokens": {
+            "ADA": {
+                "name": "Cardano",
+                "symbol": "ADA",
+                "decimals": 6,
+                "isNative": true
+            }
+        }
+    }
+} 
