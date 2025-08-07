@@ -513,7 +513,7 @@
 
         .qr-container {
             text-align: center;
-            margin: 2rem 0;
+            margin: 2rem 0 1rem 0;
             animation: zoomIn 0.8s ease-out;
         }
 
@@ -529,7 +529,7 @@
         }
 
         .qr-code {
-            max-width: 300px;
+            max-width: 250px;
             border-radius: 15px;
             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
             transition: all 0.3s ease;
@@ -544,9 +544,9 @@
             background: rgba(255, 255, 255, 0.95);
             backdrop-filter: blur(10px);
             border-radius: 15px;
-            padding: 2rem;
-            margin-top: 2rem;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            padding: 1.5rem;
+            margin-top: 1.5rem;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
             animation: slideInFromBottom 0.8s ease-out;
         }
 
@@ -806,46 +806,46 @@
                     <span id="fetchBtnText">View QR Code</span>
                     <span id="fetchBtnLoading" class="loading" style="display: none;"></span>
                 </button>
+                
+                <div class="qr-container">
+                    <img id="qrCode" class="qr-code" style="display: none;">
+                </div>
+
+                <div class="details" id="details" style="display: none;">
+                    <h3><i class="fas fa-info-circle"></i> Payment Details</h3>
+                    <div class="detail-item">
+                        <span class="detail-label">Blockchain:</span>
+                        <span class="detail-value" id="chainDisplay"></span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-label">Token:</span>
+                        <span class="detail-value" id="tokenDisplay"></span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-label">Amount:</span>
+                        <span class="detail-value" id="amountDisplay"></span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-label">Recipient Address:</span>
+                        <span class="detail-value" id="addressDisplay"></span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-label">Label:</span>
+                        <span class="detail-value" id="labelDisplay"></span>
+                    </div>
+                    <div class="detail-item" id="contractAddressContainer" style="display: none;">
+                        <span class="detail-label">Contract Address:</span>
+                        <span class="detail-value" id="contractAddress"></span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-label">Payment URI:</span>
+                        <span class="detail-value" id="uri"></span>
+                    </div>
+                </div>
             </div>
         </div>
 
         <div class="error" id="error"></div>
-
-        <div class="qr-container">
-            <img id="qrCode" class="qr-code" style="display: none;">
-        </div>
-
-        <div class="details" id="details" style="display: none;">
-            <h3><i class="fas fa-info-circle"></i> Payment Details</h3>
-            <div class="detail-item">
-                <span class="detail-label">Blockchain:</span>
-                <span class="detail-value" id="chainDisplay"></span>
-            </div>
-            <div class="detail-item">
-                <span class="detail-label">Token:</span>
-                <span class="detail-value" id="tokenDisplay"></span>
-            </div>
-            <div class="detail-item">
-                <span class="detail-label">Amount:</span>
-                <span class="detail-value" id="amountDisplay"></span>
-            </div>
-            <div class="detail-item">
-                <span class="detail-label">Recipient Address:</span>
-                <span class="detail-value" id="addressDisplay"></span>
-            </div>
-            <div class="detail-item">
-                <span class="detail-label">Label:</span>
-                <span class="detail-value" id="labelDisplay"></span>
-            </div>
-            <div class="detail-item" id="contractAddressContainer" style="display: none;">
-                <span class="detail-label">Contract Address:</span>
-                <span class="detail-value" id="contractAddress"></span>
-            </div>
-            <div class="detail-item">
-                <span class="detail-label">Payment URI:</span>
-                <span class="detail-value" id="uri"></span>
-            </div>
-        </div>
 
         <div class="features">
             <div class="feature-card">
